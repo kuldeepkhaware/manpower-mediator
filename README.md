@@ -18,7 +18,7 @@ A professional Manpower Mediator & Recruitment Management System developed in Co
 
 ## Technology
 
-- PHP 8+
+- LARAVEL
 - MySQL
 - Bootstrap 5
 - JavaScript

@@ -1,0 +1,6 @@
+<?php require APP_ROOT.'/app/views/layouts/header.php'; ?>
+<div class="d-flex justify-content-between mb-3"><h3>Requirements</h3><a class="btn btn-success" href="<?= BASE_URL ?>/requirements/create">+ New Requirement</a></div>
+<div class="card"><div class="table-responsive"><table class="table table-hover mb-0"><thead><tr><th>ID</th><th>Client</th><th>Type</th><th>Location</th><th>Staff</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<?php foreach($requirements as $r): ?><tr><td><?= $r['id'] ?></td><td><?= htmlspecialchars($r['company_name']??'-') ?></td><td><?= htmlspecialchars($r['manpower_type']) ?></td><td><?= htmlspecialchars($r['location']) ?></td><td><?= $r['number_of_staff'] ?></td><td><span class="badge bg-primary"><?= htmlspecialchars($r['status']) ?></span></td>
+<td><a class="btn btn-sm btn-info" href="<?= BASE_URL ?>/matching?id=<?= $r['id'] ?>">Match Candidates</a> <a class="btn btn-sm btn-warning" href="<?= BASE_URL ?>/requirements/edit?id=<?= $r['id'] ?>">Edit</a> <a class="btn btn-sm btn-danger" onclick="return confirm('Delete?')" href="<?= BASE_URL ?>/requirements/delete?id=<?= $r['id'] ?>">Delete</a></td></tr><?php endforeach; ?>
+</tbody></table></div></div><?php require APP_ROOT.'/app/views/layouts/footer.php'; ?>

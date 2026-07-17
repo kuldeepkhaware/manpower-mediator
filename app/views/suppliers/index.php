@@ -1,0 +1,5 @@
+<?php require APP_ROOT.'/app/views/layouts/header.php'; ?>
+<div class="d-flex justify-content-between mb-3"><h3>Manpower Suppliers</h3><a class="btn btn-success" href="<?= BASE_URL ?>/suppliers/create">+ Add Supplier</a></div>
+<div class="card"><div class="table-responsive"><table class="table table-hover mb-0"><thead><tr><th>ID</th><th>Vendor</th><th>Contact</th><th>Mobile</th><th>GST</th><th>Services</th></tr></thead><tbody>
+<?php foreach($suppliers as $s): ?><tr><td><?= $s['id'] ?></td><td><?= htmlspecialchars($s['vendor_name']) ?></td><td><?= htmlspecialchars($s['contact_person']) ?></td><td><?= htmlspecialchars($s['mobile']) ?></td><td><?= htmlspecialchars($s['gst_no']) ?></td><td><?= htmlspecialchars($s['services']) ?></td></tr><?php endforeach; ?>
+</tbody></table></div></div><?php require APP_ROOT.'/app/views/layouts/footer.php'; ?>

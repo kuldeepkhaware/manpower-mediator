@@ -1,0 +1,2 @@
+body{background:#f4f7fb}.login-bg{background:linear-gradient(135deg,#0b2d52,#0d7a3e)}.card{border-radius:16px}.form-control{padding:12px}.stat-card{background:#fff;border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.06);border-left:5px solid #198754}
+.sidebar{min-height:calc(100vh - 56px);background:#102a43}.sidebar a{display:block;color:#d9e2ec;text-decoration:none;padding:12px 14px;border-radius:8px;margin-bottom:6px}.sidebar a:hover{background:#198754;color:#fff}main{background:#f4f7fb;min-height:calc(100vh - 56px)}
